@@ -194,7 +194,7 @@ while iter.hasNext
   delete.addFamily(FAM)
   table.delete delete
 end
-
+scanner.close
 
 
 
@@ -253,5 +253,6 @@ while iter.hasNext
   print(Bytes.toString(result.getValue(FAM,'name'.to_java_bytes)))
   lis.push(Bytes.toString(result.getValue(FAM,'name'.to_java_bytes)))
 end
+scanner.close
 
 
